@@ -90,6 +90,6 @@ For more information and examples use `btc-addr --help` or `btc-addr [COMMAND] -
 5. [github.com/tyler-smith/go-bip32](https://github.com/tyler-smith/go-bip32) & [github.com/tyler-smith/go-bip39](https://github.com/tyler-smith/go-bip39) - libraries used to generate mnemonics and bip32 keys
 
 ## Notes
-All addresses and mnemonics created by the application can be tested using [https://iancoleman.io/bip39/](https://iancoleman.io/bip39/). When passing unverifiable inputs for mnemonics and paths, the client may generate inaccurate addresses. Make sure all mnemonics passed to the client are either generated using the application or conform to the BIP39 standards. 
+All addresses and mnemonics created by the application can be tested using [https://iancoleman.io/bip39/](https://iancoleman.io/bip39/). When passing incorrect/unexpected inputs for mnemonics and paths, the client may generate inaccurate addresses. Make sure all mnemonics passed to the client are either generated using the application or conform to the BIP39 standards. 
 
 The client also runs on your local machine and doesn't save any addresses to a state. Hence `stdout` will be the only place where your keys and mnemonics will be seen. The client runs offline. 
