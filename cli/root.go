@@ -7,7 +7,7 @@ import (
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "btc-addr",
-	Short: "Manage and create BTC addresses",
+	Short: "Manage and create BTC mnemonics and addresses",
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.

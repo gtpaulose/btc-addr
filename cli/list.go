@@ -15,7 +15,8 @@ var listCmd = &cobra.Command{
 	Long: `List addresses for different formats by providing a mnemonic or a root key. 
 The mnemonic must be enclosed in double quotes and the root key should be in the BIP32 format. 
 	`,
-	Example: "btc-addr list -m \"mask capable giant patient subject buffalo lab armed potato twice barrel online\"",
+	Example: `  btc-addr list -m "mask capable giant patient subject buffalo lab armed potato twice barrel online"
+  btc-addr list -m "creek multiply disorder edge hotel armor labor kidney remain outdoor orange spoon" -f bip49 -p "m/49'/0'/0'/0/1"`,
 	Run: func(cmd *cobra.Command, args []string) {
 		mnemonic := cmd.Flag("mnemonic").Value.String()
 		pp := cmd.Flag("passphrase").Value.String()

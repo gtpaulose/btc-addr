@@ -86,7 +86,7 @@ $ btc-addr generate multisig --n 2 --m 3 020f8796e0f870a9a3b269be3b1e78e380c9b56
 Address:  38GxnyunFjXkHQMUEU5m4gqhD1fmKcRuEd
 ```
 
-For more information use `btc-addr --help` or `btc-addr [COMMAND] --help`
+For more information and examples use `btc-addr --help` or `btc-addr [COMMAND] --help`
 
 ## Third Party Packages
 1. [Cobra CLI](https://github.com/spf13/cobra) - CLI commander written in Go

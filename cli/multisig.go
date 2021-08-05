@@ -10,9 +10,10 @@ import (
 
 // multisigCmd represents the multisig command
 var multisigCmd = &cobra.Command{
-	Use:   "multisig [OPTIONS] public_keys...",
-	Short: "Generates a n-of-m multisig address",
-	Long:  `By providing the values of n, m and the public keys, the client will return a multi-sig address which can be safely distributed`,
+	Use:     "multisig public_keys...",
+	Short:   "Generates a n-of-m multisig address",
+	Long:    `By providing the values of n, m and the public keys, the client will return a multi-sig address which can be safely distributed`,
+	Example: `  btc-addr generate multisig --n 2 --m 3 pubkey1 pubkey2 pubkey3`,
 	Run: func(cmd *cobra.Command, args []string) {
 		pubkeys := [][]byte{}
 		for _, key := range args {
