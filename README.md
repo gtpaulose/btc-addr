@@ -32,14 +32,8 @@ Test Coverage: 78%
 ```
 ## Installation
 
-Clone the repo
 ```bash
-git clone https://github.com/gtpaulose/btc-addr
-```
-
-Install binary
-```bash
-cd btc-adr/cmd/btc-adr && go install .
+go get github.com/gtpaulose/btc-addr/cmd/btc-addr
 ```
 
 ## Usage
@@ -77,7 +71,7 @@ Path               Address                            Public Key                
 m/49'/0'/0'/0/6    36ZVcExdYMjoPrm8r1USHEsCfGDyxNpryN 03515588f90b2ebb8a4755597e82bafdd12148d384eba8bd152da423e23dc6a58e KwM5GGaFi1NVdm5ViGHFKvXLf8PbESyeLZusH77eCDoGfk4CGzXb
 ```
 
-**Note:** Addresses corresponding to `-f bip49` and `-f bip84` are segwit nested and segwith(bech32) respectively
+**Note:** Addresses corresponding to `-f bip49` and `-f bip84` are segwit nested and segwit(bech32) respectively
 
 ### Create N-of-M multi-sig address
 ```bash
