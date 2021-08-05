@@ -1,6 +1,7 @@
 # BTC Address Generator
 
 CLI client created using `go-cobra` to generate BIP32 mnemonics, associated addresses (BIP44, BIP49, BIP84) and multi-sig addresses.
+Test Coverage: 78%
 
 ### Project Structure
 ```
@@ -29,12 +30,11 @@ CLI client created using `go-cobra` to generate BIP32 mnemonics, associated addr
 
 6 directories, 15 files
 ```
-
 ## Installation
 
 Clone the repo
 ```bash
-git clone <>
+git clone https://github.com/gtpaulose/btc-addr
 ```
 
 Install binary

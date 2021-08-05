@@ -35,3 +35,25 @@ func TestPrintAddressForPathPurposeBIP84(t *testing.T) {
 	assert.Equal(t, fmt.Sprintf("%x", address.GetKey().GetPublicKey()), "0398781494367e40b9d4cfe99d420986a022d23a89f3bfdca62c4c5f4ab46556b9")
 	assert.Equal(t, address.GetKey().GetWIF(), "KxUZEVFxo9KfgQmm9BZbEwPZR1y3kJPbNXWtbFj1CXdb4T1dmu9N")
 }
+
+func TestInvalidFormat(t *testing.T) {
+	purpose, err := ValidateFormat("bip99")
+	assert.Error(t, err)
+	assert.Equal(t, purpose, Purpose(-1))
+}
+
+func TestValidFormat(t *testing.T) {
+	purpose, err := ValidateFormat("bip49")
+	assert.ErrorIs(t, err, nil)
+	assert.Equal(t, purpose, PurposeBIP49)
+}
+
+func TestInvalidPath(t *testing.T) {
+	err := ValidatePath(`m/50'/0'/0'/0/6`, PurposeBIP44)
+	assert.Error(t, err)
+}
+
+func TestValidPath(t *testing.T) {
+	err := ValidatePath(`m/44'/0'/0'/0/6`, PurposeBIP44)
+	assert.ErrorIs(t, err, nil)
+}
