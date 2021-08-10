@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/gtpaulose/btc-addr/internal/multisig"
+	"github.com/gtpaulose/btc-addr/pkg/multisig"
 	"github.com/spf13/cast"
 	"github.com/spf13/cobra"
 )

@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"github.com/gtpaulose/btc-addr/internal/keystore"
+	"github.com/gtpaulose/btc-addr/pkg/keystore"
 	"github.com/spf13/cast"
 	"github.com/spf13/cobra"
 )
