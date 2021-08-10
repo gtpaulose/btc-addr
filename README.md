@@ -84,7 +84,7 @@ For more information and examples use `btc-addr --help` or `btc-addr [COMMAND] -
 
 ## Third Party Packages
 1. [Cobra CLI](https://github.com/spf13/cobra) - CLI commander written in Go
-2. [github.com/btcsuite/btcd](https://github.com/btcsuite/btcd/tree/master/btcec) - for BTC mainet config and script building utilities
+2. [github.com/btcsuite/btcd](https://github.com/btcsuite/btcd/tree/master/btcec) - for BTC mainnet config and script building utilities
 3. [github.com/spf13/cast](https://github.com/spf13/cast) - safely cast primitive types
 4. [github.com/stretchr/testify](https://github.com/stretchr/testify) - test assertion library
 5. [github.com/tyler-smith/go-bip32](https://github.com/tyler-smith/go-bip32) & [github.com/tyler-smith/go-bip39](https://github.com/tyler-smith/go-bip39) - libraries used to generate mnemonics and bip32 keys
